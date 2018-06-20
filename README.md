@@ -17,7 +17,7 @@ Maintain a read-only JSON string representing the state of the game:
 
 Returns JSON string representing game state
 
-```json
+```js
 {
   players: [
     { // player object
@@ -25,18 +25,18 @@ Returns JSON string representing game state
       positions: [
         [12, 1], // 12th column, 1st position
         [7, 9]
-        ...
+        // ...
       ]
     },
-    ...
+    // ...
   ],
   tempMarkers: [
     [12, 2],
-    ...
+    // ...
   ],
   turn: “Joe Somebody”,
   dice: [2, 6, 4, 3],
-  columnsClaimed: [4, ...]
+  columnsClaimed: [4, /* ... */]
 },
 success: true, // request successful
 msg: '' // use for error messages
@@ -46,7 +46,7 @@ msg: '' // use for error messages
 
 Accepts a JSON string representing the attempted move.
 
-```json
+```js
 {
   name: "Joe Somebody"
   columns: [], // Array of integers 2-12 (max length: 3)
@@ -60,5 +60,5 @@ Returns a JSON string representing game state and/or validation error.
 
 Return an array of all usernames. Example:
 
-```json
+```js
 [ "tim", "blake", "matt", "anna" ]
