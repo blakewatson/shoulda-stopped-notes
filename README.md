@@ -48,7 +48,8 @@ Accepts a JSON string representing the attempted move.
 
 ```js
 {
-  username: "matt"
+  username: "matt",
+  token: "string",
   columns: [], // Array of integers 2-12 (max length: 3)
   continue: true // Boolean
 }
