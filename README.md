@@ -21,7 +21,7 @@ Returns JSON string representing game state
 {
   players: [
     { // player object
-      name: "Joe Somebody",
+      username: "matt",
       positions: [
         [12, 1], // 12th column, 1st position
         [7, 9]
@@ -48,7 +48,7 @@ Accepts a JSON string representing the attempted move.
 
 ```js
 {
-  name: "Joe Somebody"
+  username: "matt"
   columns: [], // Array of integers 2-12 (max length: 3)
   continue: true // Boolean
 }
